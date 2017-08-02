@@ -1,5 +1,9 @@
 io.stdout:setvbuf("no") --For Console output in IDEs
 
+<<<<<<< HEAD
+=======
+
+>>>>>>> experimental
 require "torch"
 require "cutorch"
 
@@ -13,8 +17,11 @@ mainmenu = require "code/states/mainmenu"
 
 function love.load()
   if arg[#arg] == "-debug" then require("mobdebug").start() end --For Zerobrane Debugging
+<<<<<<< HEAD
   state.registerEvents()
   state.switch(splash)
+=======
+>>>>>>> experimental
 end
 
 function love.update(dt)
